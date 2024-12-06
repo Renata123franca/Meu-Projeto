@@ -1,0 +1,111 @@
+body {
+    color: rgb(128, 128, 0);
+    background: grey;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    margin-bottom: 100px;
+}
+
+header {
+    border-bottom: solid 2px rgb(128, 128, 0);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(128, 128, 0) !important;
+}
+
+header span {
+    color: #556b2f;
+}
+
+.chamada {
+    background: url('') no-repeat center center;
+    background-size: cover;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 250px;
+    position: relative;
+}
+
+.chamada-texto {
+    color: grey;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #556b2f grey; /* Para Firefox */
+}
+
+.categoria-videos::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+    background-color: grey; /* Cor de fundo da barra de rolagem */
+}
+
+.categoria-videos::-webkit-scrollbar-thumb {
+    background-color: #556b2f; /* Cor da parte que você arrasta */
+    border-radius: 10px; /* Arredondamento do polegar */
+}
+
+.categoria-videos::-webkit-scrollbar-thumb:hover {
+    background-color: #556b2f; /* Cor do polegar ao passar o mouse */
+}
+
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid rgb(128, 128, 0);
+    transform: scale(1.05);
+}
+
+.categoria h2 {
+    color: rgb(128, 128, 0);
+}
+
+/* Adicionando barra de rolagem para a segunda categoria */
+.categoria-videos-second {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #556b2f grey; /* Para Firefox */
+}
+
+.categoria-videos-second::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+    background-color: grey; /* Cor de fundo da barra de rolagem */
+}
+
+.categoria-videos-second::-webkit-scrollbar-thumb {
+    background-color: #556b2f; /* Cor da parte que você arrasta */
+    border-radius: 10px; /* Arredondamento do polegar */
+}
+
+.categoria-videos-second::-webkit-scrollbar-thumb:hover {
+    background-color: #556b2f; /* Cor do polegar ao passar o mouse */
+}
